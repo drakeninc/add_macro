@@ -4,7 +4,7 @@ description = "Procedural macros for derive the 'std::fmt::Display' trait"
 version = "0.1.0"
 edition = "2021"
 authors = ["Draken inc. <t.me/drakeninc>"]
-license = "MIT license"
+license = "MIT"
 
 [lib]
 proc-macro = true

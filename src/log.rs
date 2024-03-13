@@ -12,5 +12,5 @@
 /// - [chrono](<https://docs.rs/chrono>)
 #[macro_export]
 macro_rules! log {
-    ($($arg:tt)*) => { print!("[{}] {}", chrono::Utc::now().format!("%Y-%m-%dT%T.%s"), format_args!($($arg)*).to_string()) };
+    ($($arg:tt)*) => { println!("[{}] {}", chrono::Utc::now().format("%Y-%m-%dT%T.%s"), format_args!($($arg)*).to_string()) };
 }

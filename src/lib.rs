@@ -1,19 +1,28 @@
 //! This crate adds the some useful macros for easily work
 
+pub mod inputln;
+pub mod log;
+pub mod elog;
+pub mod str;
+pub mod re;
+pub mod map;
+pub mod set;
+
 /// Derive the [std::error::Error] trait (from crate [thiserror])
 /// 
 /// # Examples
 /// ```
-/// use add_macro::Error;
+/// use add_macro::{thiserror, Error};
 /// 
 /// #[derive(Debug, Error)]
 /// pub enum FileError {
-///     #[error("The file was not found")]
-///     NotFound,
+///     #[error("The file '{0}' is not found")]
+///     NotFound(String),
 ///     #[error("Expected to get the file, but the folder was found")]
 ///     ExpectedFile,
 /// }
 /// ```
+pub use thiserror;
 pub use thiserror::Error;
 
 /// Derive the [std::fmt::Display] trait
@@ -44,10 +53,3 @@ pub use thiserror::Error;
 /// }
 /// ```
 pub use display_derive::Display;
-
-pub mod log;
-pub mod elog;
-pub mod str;
-pub mod re;
-pub mod map;
-pub mod set;

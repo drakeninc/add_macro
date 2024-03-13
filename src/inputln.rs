@@ -13,7 +13,7 @@ macro_rules! inputln {
     () => {{
         let mut buf = String::new();
         let _ = std::io::stdin().read_line(&mut buf);
-        buf
+        buf.trim().to_owned()
     }};
     ($($arg:tt)*) => {{
         use std::io::Write;

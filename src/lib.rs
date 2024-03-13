@@ -22,8 +22,8 @@ pub mod set;
 ///     ExpectedFile,
 /// }
 /// ```
-pub use thiserror;
 pub use thiserror::Error;
+pub use thiserror;
 
 /// Derive the [std::fmt::Display] trait
 /// 

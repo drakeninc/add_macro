@@ -4,7 +4,7 @@ version = 3
 
 [[package]]
 name = "add_macro"
-version = "0.1.6"
+version = "0.1.7"
 dependencies = [
  "display_impl",
  "thiserror",

@@ -2,7 +2,7 @@ extern crate proc_macro;
 use proc_macro as proc;
 
 #[proc_macro_derive(Display)]
-pub fn display_derive(input: proc::TokenStream) -> proc::TokenStream {
+pub fn display_impl(input: proc::TokenStream) -> proc::TokenStream {
     let ast: syn::DeriveInput = syn::parse(input).unwrap();
     let name = &ast.ident;
 

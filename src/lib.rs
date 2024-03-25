@@ -8,6 +8,7 @@ pub mod re;
 pub mod map;
 pub mod set;
 
+pub use thiserror;
 /// Derive the [std::error::Error] trait (from crate [thiserror])
 /// 
 /// # Examples
@@ -23,8 +24,8 @@ pub mod set;
 /// }
 /// ```
 pub use thiserror::Error;
-pub use thiserror;
 
+pub use display_impl;
 /// Derive the [std::fmt::Display] trait
 /// 
 /// # Examples
@@ -52,4 +53,4 @@ pub use thiserror;
 ///     println!("{tomas}");    // => Hello, Tomas. Your age is 25 years.
 /// }
 /// ```
-pub use display_derive::Display;
+pub use display_impl::Display;

@@ -9,5 +9,5 @@ homepage = "https://docs.rs/add_macro"
 repository = "https://github.com/drakeninc/add_macro"
 
 [dependencies]
-display_derive = { version = "0.0.0", path = "lib/display_derive" }
+display_impl = { version = "0.1.0", path = "display_impl" }
 thiserror = "1.0.57"

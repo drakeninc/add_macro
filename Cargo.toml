@@ -9,6 +9,5 @@ homepage = "https://docs.rs/add_macro"
 repository = "https://github.com/drakeninc/add_macro"
 
 [dependencies]
-chrono = "0.4.35"
-display_impl = "0.1.0"
+add_macro_display_impl = "0.1.0"
 thiserror = "1.0.57"

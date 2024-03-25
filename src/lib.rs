@@ -25,7 +25,7 @@ pub use thiserror;
 /// ```
 pub use thiserror::Error;
 
-pub use display_impl;
+pub use add_macro_display_impl;
 /// Derive the [std::fmt::Display] trait
 /// 
 /// # Examples
@@ -53,4 +53,4 @@ pub use display_impl;
 ///     println!("{tomas}");    // => Hello, Tomas. Your age is 25 years.
 /// }
 /// ```
-pub use display_impl::Display;
+pub use add_macro_display_impl::Display;

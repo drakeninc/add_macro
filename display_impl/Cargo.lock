@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "display_impl"
+name = "add_macro-display_impl"
 version = "0.1.0"
 dependencies = [
  "quote",

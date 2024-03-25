@@ -3,11 +3,12 @@ name = "add_macro"
 description = "This crate adds the some useful macros for easily work"
 version = "0.1.7"
 edition = "2021"
-authors = ["Draken inc. <t.me/drakeninc>"]
+authors = ["DrakeN .Inc <t.me/drakeninc>"]
 license = "MIT"
 homepage = "https://docs.rs/add_macro"
 repository = "https://github.com/drakeninc/add_macro"
 
 [dependencies]
-display_impl = { version = "0.1.0", path = "./display_impl" }
+chrono = "0.4.35"
+display_impl = "0.1.0"
 thiserror = "1.0.57"

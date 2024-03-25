@@ -1,7 +1,11 @@
 [package]
-name = "display_impl"
+name = "add_macro-display_impl"
+description = "This crate adds the trait 'Display' implementation. Writed for crate 'add_macro'"
 version = "0.1.0"
 edition = "2021"
+authors = ["DrakeN .Inc <t.me/drakeninc>"]
+license = "MIT"
+repository = "https://github.com/drakeninc/add_macro/display_impl"
 
 [lib]
 proc-macro = true
